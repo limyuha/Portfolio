@@ -5,22 +5,14 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* === 무지개 배경색 === */
+.rainbow-bg {
+  background: linear-gradient(
+    180deg,
+    #fde2e4 0%,
+    #e2ece9 25%,
+    #c9e4de 50%,
+    #bee1e6 75%,
+    #f0efeb 100%
+  );
 }
